@@ -104,10 +104,10 @@ dependencies = [
 [[package]]
 name = "corepc-client"
 version = "0.9.0"
-source = "git+https://github.com/jamillambert/corepc.git?branch=0918-serde-deny-feature#d4dd790df0cac3903b5efce33976fe64d431fe18"
+source = "git+https://github.com/0xb10c/corepc.git?branch=jamillambert-0918-serde-deny-feature%2Brelative-types-path#7e0864d930fa2e204656beac98d33eb421744a4a"
 dependencies = [
  "bitcoin",
- "corepc-types 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "corepc-types 0.9.0 (git+https://github.com/0xb10c/corepc.git?branch=jamillambert-0918-serde-deny-feature%2Brelative-types-path)",
  "jsonrpc",
  "log",
  "serde",
@@ -126,8 +126,7 @@ dependencies = [
 [[package]]
 name = "corepc-types"
 version = "0.9.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f0231e773ddcfebb8eb8627a16553de56ab064a03843d847f409107ad661f25"
+source = "git+https://github.com/jamillambert/corepc.git?branch=0918-serde-deny-feature#d4dd790df0cac3903b5efce33976fe64d431fe18"
 dependencies = [
  "bitcoin",
  "serde",
@@ -137,7 +136,7 @@ dependencies = [
 [[package]]
 name = "corepc-types"
 version = "0.9.0"
-source = "git+https://github.com/jamillambert/corepc.git?branch=0918-serde-deny-feature#d4dd790df0cac3903b5efce33976fe64d431fe18"
+source = "git+https://github.com/0xb10c/corepc.git?branch=jamillambert-0918-serde-deny-feature%2Brelative-types-path#7e0864d930fa2e204656beac98d33eb421744a4a"
 dependencies = [
  "bitcoin",
  "serde",
