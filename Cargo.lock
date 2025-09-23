@@ -20,15 +20,15 @@ dependencies = [
 
 [[package]]
 name = "base64"
-version = "0.13.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9e1b586273c5702936fe7b7d6896644d8be71e6314cfe09d3167c95f712589e8"
-
-[[package]]
-name = "base64"
 version = "0.21.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567"
+
+[[package]]
+name = "base64"
+version = "0.22.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
 
 [[package]]
 name = "bech32"
@@ -104,10 +104,10 @@ dependencies = [
 [[package]]
 name = "corepc-client"
 version = "0.9.0"
-source = "git+https://github.com/0xb10c/corepc.git?branch=jamillambert-0918-serde-deny-feature%2Brelative-types-path#7e0864d930fa2e204656beac98d33eb421744a4a"
+source = "git+https://github.com/jamillambert/corepc.git?branch=0918-serde-deny-feature#f4c5c4dcf21eed4f3135ac0398999e1749247c00"
 dependencies = [
  "bitcoin",
- "corepc-types 0.9.0 (git+https://github.com/0xb10c/corepc.git?branch=jamillambert-0918-serde-deny-feature%2Brelative-types-path)",
+ "corepc-types",
  "jsonrpc",
  "log",
  "serde",
@@ -119,7 +119,7 @@ name = "corepc-pr-367-tester"
 version = "0.1.0"
 dependencies = [
  "corepc-client",
- "corepc-types 0.9.0 (git+https://github.com/jamillambert/corepc.git?branch=0918-serde-deny-feature)",
+ "corepc-types",
  "serde_json",
 ]
 
@@ -127,16 +127,6 @@ dependencies = [
 name = "corepc-types"
 version = "0.9.0"
 source = "git+https://github.com/jamillambert/corepc.git?branch=0918-serde-deny-feature#d4dd790df0cac3903b5efce33976fe64d431fe18"
-dependencies = [
- "bitcoin",
- "serde",
- "serde_json",
-]
-
-[[package]]
-name = "corepc-types"
-version = "0.9.0"
-source = "git+https://github.com/0xb10c/corepc.git?branch=jamillambert-0918-serde-deny-feature%2Brelative-types-path#7e0864d930fa2e204656beac98d33eb421744a4a"
 dependencies = [
  "bitcoin",
  "serde",
@@ -173,10 +163,9 @@ checksum = "4a5f13b858c8d314ee3e8f639011f7ccefe71f97f96e50151fb991f267928e2c"
 [[package]]
 name = "jsonrpc"
 version = "0.18.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3662a38d341d77efecb73caf01420cfa5aa63c0253fd7bc05289ef9f6616e1bf"
+source = "git+https://github.com/jamillambert/corepc.git?branch=0918-serde-deny-feature#f4c5c4dcf21eed4f3135ac0398999e1749247c00"
 dependencies = [
- "base64 0.13.1",
+ "base64 0.22.1",
  "minreq",
  "serde",
  "serde_json",
